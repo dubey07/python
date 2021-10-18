@@ -2,11 +2,12 @@ y =(lambda x : x*2)(12)
 print(y)
 
 list1 = [1,2,3,4,5,6,7,8,9]
-z = filter(lambda x : x%2==0 , list1)
-print(z)
 
 z = filter(lambda x : x%2==0 , list1)
 print(list(z))
+
+x = lambda a : a + 10
+print(x(5))
 
 #numbers1 = [1,2,3]
 #num2 = [4,5,6]
@@ -35,16 +36,6 @@ list = [[5,4,3],[1,4,5,6],[6,3,9,12]]
 s = lambda x:[sorted(i) for i in x]
 print(s(list))
 
-secmax = lambda x : [x[-2] for i in s(x)]
-print(secmax(list))
 
-from functools import reduce
-li = [5,6,7,8,9,10,11]
-sum = reduce (lambda x,y :x+y, li)
-print(sum)
 
-from functools import reduce
-li = [5,6,7,8,9,10,11]
-max = reduce (lambda x,y :x if x>y else y, li)
-print(max)
 
