@@ -13,5 +13,4 @@ print(odd)
 number_list = [ x for x in range(30) if x % 2 == 0]
 print(number_list)
 
-num_list = [y for y in range(50) if y % 2 == 0 if y % 5 == 0]
-print(num_list)
+
